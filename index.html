@@ -45,11 +45,12 @@
       50% { transform: translateY(-10px); }
     }
 
-    .message {
-      display: none;
-      text-align: center;
-      max-width: 600px;
-    }
+   .message {
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
 
     .message h1 {
       font-size: 3em;
@@ -129,7 +130,7 @@
     }
 
     function animateFireworks() {
-      ctx.fillStyle = "rgba(0,0,0,0.1)";
+      ctx.fillStyle = "rgba(255,255,255,0.1)"; // Fondo claro
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       for (let i = 0; i < particles.length; i++) {
